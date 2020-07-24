@@ -1,4 +1,4 @@
-- hosts: Linux
+- hosts: 10.0.0.30
   become: yes
 
   tasks:

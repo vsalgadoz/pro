@@ -1,4 +1,4 @@
-- hosts: Lab1
+- hosts: Linux
   become: yes
 
   tasks:

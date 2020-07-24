@@ -1,4 +1,4 @@
-- hosts: Linux
+- hosts: All
   become: yes
 
   tasks:

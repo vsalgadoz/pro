@@ -9,12 +9,12 @@
         dest: /etc/yum.repos.d/
     - name: Install fusioninventory-agent
       yum:
-       name: fusioninventory-agent
-       state: present
+        name: fusioninventory-agent
+        state: present
     - name: Install fusioninventory-agent-task-inventory
       yum:
-       name: fusioninventory-agent-task-inventory
-       state: present
+        name: fusioninventory-agent-task-inventory
+        state: present
     - name: change agent.cfg server
       lineinfile:
         path: "{{ fusioninventory_conf_dir }}/agent.cfg"

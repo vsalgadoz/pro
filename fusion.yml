@@ -1,5 +1,5 @@
 ---
-- hosts: LinuxFI
+- hosts: Linux
   become: yes
 
   tasks:

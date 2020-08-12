@@ -7,7 +7,7 @@
       get_url:
         url: https://copr.fedorainfracloud.org/coprs/trasher/fusioninventory-agent/repo/epel-7/trasher-fusioninventory-agent-epel-7.repo
         dest: /etc/yum.repos.d/
-- name: Install fusioninventory-agent
+    - name: Install fusioninventory-agent
       yum:
        name: fusioninventory-agent
        state: present

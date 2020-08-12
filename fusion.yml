@@ -21,18 +21,6 @@
         state: present
         regexp: '#server = http://server.domain.com/glpi/plugins/fusioninventory/'
         line: "server ={{ fusioninventory_server }}"
-    - name: change agent.cfg user
-      lineinfile:
-        path: "{{ fusioninventory_conf_dir }}/agent.cfg"
-        state: present
-        regexp: 'user ='
-        line: "user={{ fusioninventoryagent_user }}"
-    - name: agent.cfg password
-      lineinfile:
-        path: "{{ fusioninventory_conf_dir }}/agent.cfg"
-        state: present
-        regexp: 'password ='
-        line: "password={{ fusioninventoryagent_password }}"
     - name: Start fusioninventory-agent
       service:
         name: fusioninventory-agent

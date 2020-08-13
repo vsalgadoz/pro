@@ -1,0 +1,12 @@
+---
+- hosts: DataBases
+  become: yes
+
+  tasks:
+   - name: Backup database server glpidev
+     mysql_db:
+       state: dump
+       name: glpi
+       target: /tmp/glpidev3.mysql
+       login_user: glpi
+       login_password: 0pt12019.

@@ -1,4 +1,4 @@
-- hosts: Linux
+- hosts: maqueta_oss
   become: yes
 
   tasks:

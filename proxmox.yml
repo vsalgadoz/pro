@@ -5,6 +5,6 @@
       api_user: root@pam
       api_password: RpcYoHi6Kb9y
       api_host: 167.114.172.172
-      vmid: zabbix-srv
+      vmid: 103
       node: ns514447
       state: restarted

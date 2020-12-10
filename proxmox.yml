@@ -1,4 +1,5 @@
 ---
+hosts: Proxmox
 - name: Get VM current state
   community.general.proxmox_kvm:
     api_user: root@pam

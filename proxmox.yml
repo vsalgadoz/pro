@@ -9,7 +9,9 @@
         name: "{{ vname }}"
         node: ns514447
         state: current
-      
+        register: result
+        ignore_errors: True
+              
     - name: Clonar del source hacia "{{ vname }}"
       proxmox_kvm:
         api_user    : root@pam
@@ -21,5 +23,6 @@
         storage     : local
         format      : qcow2
         timeout     : 500  # Note: The task can take a while. Adapt
+        when: result|false
 
    

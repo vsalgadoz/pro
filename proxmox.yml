@@ -7,4 +7,4 @@
       api_host: 167.114.172.172
       vmid: zabbix-srv
       node: ns514447
-      state: current
+      state: restarted

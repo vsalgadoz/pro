@@ -5,7 +5,7 @@
       api_user: root@pam
       api_password: RpcYoHi6Kb9y
       api_host: 167.114.172.172
-      name: {{ vname }}
+      name: "{{ vname }}"
       node: ns514447
       state: current
       
@@ -13,8 +13,8 @@
       api_user    : root@pam
       api_password: RpcYoHi6Kb9y
       api_host    : 167.114.172.172
-      clone       : {{ source }}   # The VM source
-      name        : {{ vname }}
+      clone       : "{{ source }}"   # The VM source
+      name        : "{{ vname }}"
       node        : ns514447
       storage     : local
       format      : qcow2

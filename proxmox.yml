@@ -1,8 +1,8 @@
 - name: Get VM current state
   community.general.proxmox_kvm:
     api_user: root@pam
-    api_password: secret
-    api_host: helldorado
+    api_password: RpcYoHi6Kb9y
+    api_host: 
     name: spynal
     node: sabrewulf
     state: current

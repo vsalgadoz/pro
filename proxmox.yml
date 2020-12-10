@@ -1,11 +1,10 @@
 ---
 - hosts: Proxmox
-tasks:
-  - name: Get VM current state
-    community.general.proxmox_kvm:
+  tasks:
+  - proxmox:
       api_user: root@pam
       api_password: RpcYoHi6Kb9y
       api_host: 167.114.172.172
-      name: zabbix-srv
+      vmid: zabbix-srv
       node: ns514447
       state: current

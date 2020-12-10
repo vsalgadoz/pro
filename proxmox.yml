@@ -3,23 +3,23 @@
   tasks:
     - name: Validar que no exista "{{ vname }}"
       proxmox_kvm:
-      api_user: root@pam
-      api_password: RpcYoHi6Kb9y
-      api_host: 167.114.172.172
-      name: "{{ vname }}"
-      node: ns514447
-      state: current
+        api_user: root@pam
+        api_password: RpcYoHi6Kb9y
+        api_host: 167.114.172.172
+        name: "{{ vname }}"
+        node: ns514447
+        state: current
       
     - name: Clonar del source hacia "{{ vname }}"
       proxmox_kvm:
-      api_user    : root@pam
-      api_password: RpcYoHi6Kb9y
-      api_host    : 167.114.172.172
-      clone       : "{{ source }}"   # The VM source
-      name        : "{{ vname }}"
-      node        : ns514447
-      storage     : local
-      format      : qcow2
-      timeout     : 500  # Note: The task can take a while. Adapt
+        api_user    : root@pam
+        api_password: RpcYoHi6Kb9y
+        api_host    : 167.114.172.172
+        clone       : "{{ source }}"   # The VM source
+        name        : "{{ vname }}"
+        node        : ns514447
+        storage     : local
+        format      : qcow2
+        timeout     : 500  # Note: The task can take a while. Adapt
 
    

@@ -23,6 +23,6 @@
         storage     : local
         format      : qcow2
         timeout     : 500  # Note: The task can take a while. Adapt
-      when: result|false
+      when: result|failed
 
    

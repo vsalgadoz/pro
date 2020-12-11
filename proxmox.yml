@@ -23,6 +23,14 @@
         storage     : local
         format      : qcow2
         timeout     : 500  # Note: The task can take a while. Adapt
+        
+     - proxmox_kvm:
+         api_user: root@pam
+         api_password: RpcYoHi6Kb9y
+         api_host: 167.114.172.172
+         name: '{{ vname }}'
+         node: ns514447
+         state      : started
     
 
    
